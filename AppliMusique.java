@@ -1,7 +1,5 @@
 package SAE_spotify;
 
-// Importation des bibliothèques nécessaires pour l'interface graphique (Desktop),
-// la gestion des entrées/sorties (fichiers), le réseau (URI), les dates et les collections.
 import java.awt.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -17,14 +15,13 @@ public class AppliMusique {
     // Variables globales statiques
     private static String[] titre;          // Tableau pour stocker les en-têtes du fichier CSV
     private static List<Musique> ListMusique; // La liste principale contenant les objets Musique
-    private static long start, stop;        // Variables pour mesurer le temps d'exécution (chronomètre)
+    private static long start, stop;        // Variables pour mesurer le temps d'exécution
 
     public static void main(String[] args) {
-        // Variable de configuration pour choisir l'implémentation de la liste
-        boolean ARRAYlist = true;
+        boolean ARRAYlist = true; // Variable de configuration pour choisir l'implémentation de la liste
         int choix = -1; // Initialisation du choix de l'utilisateur pour entrer dans la boucle
 
-        // Initialisation de la liste selon le choix (ArrayList est généralement plus rapide pour l'accès, LinkedList pour les ajouts/suppressions en tête/milieu)
+        // Initialisation de la liste selon le choix (ArrayList ou LinkedList)
         if (ARRAYlist) {
             ListMusique = new ArrayList<>();
         } else {
@@ -651,3 +648,4 @@ public class AppliMusique {
         System.out.println("");
     }
 }
+
