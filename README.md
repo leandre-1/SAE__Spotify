@@ -43,6 +43,8 @@ Les temps d'exécution mesurés ont été confrontés aux complexités théoriqu
 ---
 
 ## Structure du Projet
+
+```text
 .
 ├── AppliMusique.java     # Classe principale (Menu console et traitements)
 ├── Musique.java          # Classe métier représentant une chanson
